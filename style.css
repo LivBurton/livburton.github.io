@@ -1,10 +1,10 @@
-/*body {
+body {
 	background-color: hsl(192, 50%, 93%);
 }
 
 h1 {
 	font-family: "Georgia";
-}*/
+}
 
 .StyledPrimary {
 	list-style-type: none;
@@ -43,7 +43,7 @@ h1 {
 	background-color: hsl(192, 6%, 83%);
 }
 
-/*p {
+p {
 	border: solid;
 	padding: 20px;
 	font-size: 20px;
@@ -52,5 +52,4 @@ h1 {
 
 ul {
 	font-family: "Georgia";
-}*/
-
+}
