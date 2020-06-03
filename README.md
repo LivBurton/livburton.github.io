@@ -1,3 +1,11 @@
+<nav>
+			<ul class="StyledPrimary">
+				<li class="HomeLink"><strong>Home</strong></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+			</ul>
+		</nav>
 ## Welcome to GitHub Pages
 
 See my First project here: <a href="https://livburton.github.io/Tribute-Page/" target="_blank">First Project</a>
