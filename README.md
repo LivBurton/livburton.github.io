@@ -5,7 +5,7 @@ See my First project here: <a href="https://livburton.github.io/Tribute-Page/" t
 You can use the [editor on GitHub](https://github.com/LivBurton/livburton.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-<h1> This is a test</h>
+<h1> This is a test</h1>
 <p> this is a test</p>
 
 ### Markdown
