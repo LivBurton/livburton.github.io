@@ -1,7 +1,6 @@
 ## Welcome to GitHub Pages
 
-See my First project here: [Link](https://livburton.github.io/Tribute-Page/)
-<a href="https://livburton.github.io/Tribute-Page/" target="_blank">First Project</a>
+See my First project here: <a href="https://livburton.github.io/Tribute-Page/" target="_blank">First Project</a>
 
 You can use the [editor on GitHub](https://github.com/LivBurton/livburton.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
