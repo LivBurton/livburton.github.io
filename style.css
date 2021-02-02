@@ -15,57 +15,80 @@ body {
 	font-family: 'Muli', sans-serif;
 }
 
-header {
-	display: flex;
-	justify-content: flex-end;
+.navbar {
+	font-size: 18px;
+	padding-bottom: 10px;
 	position: fixed;
-	top: 0;
-	left: 0;
+	z-index: 100;
 	width: 100%;
-	height: 73px;
-	background-color: hsl(243, 1%, 21%);
 	border-bottom: solid;
-	box-shadow: 0px 0px 64px 2px rgba(0, 0, 0, 0.75) inset;
-	margin: 0;
+	background-color: hsl(0, 0%, 12%);
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
 	padding: 0;
 }
 
-.styled-primary {
-	display: flex;
-	margin-right: 2.5rem;
-	margin-top: 0;
-}
-
-.styled-primary>li>a {
-	display: inline-block;
-	width: 120px;
-	color: hsl(60, 100%, 85%);
+.nav-link, .logo {
 	text-decoration: none;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	font-family: 'Exo 2', sans-serif;
 }
 
-.styled-primary li {
+.logo, .nav-toggle {
+	padding: 10px;
+}
+
+.logo {
 	display: inline-block;
-	font-size: 1.1rem;
-	width: 120px;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+	font-size: 26px;
+	font-weight: 900;
+	background: rgb(0, 255, 136);
+	background: linear-gradient(138deg, rgba(0, 255, 136, 1) 0%, rgba(255, 45, 96, 1) 100%);
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	margin-left: 20px;
 }
 
-.styled-primary li a:hover {
-	background-color: hsl(340, 100%, 50%);
+.nav-link, {
+	color: #fff;
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.main-nav li:first-child {
+	padding-top: 20px;
+	border-top: 1px solid rgb(200, 200, 200);
+}
+
+.nav-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 24px;
+}
+
+.show {
+	display: block;
+}
+
+.main-nav a:hover {
+	color: hsl(340, 100%, 50%);
 }
 
 /* offset anchors */
 
-#welcome-section {
-	padding-top: 73px;
-	margin-top: -73px;
-}
-
-#projects {
+#projects, .about {
 	padding-top: 77px;
 	margin-top: -77px;
 }
@@ -73,35 +96,59 @@ header {
 .welcome {
 	background-image: url("/img/laptop-img4.jpg");
 	background-size: cover;
-	margin-top: 73px;
+	padding-top: 73px;
 	width: 100%;
-	height: 100vh;
+	height: 800px;
 	left: 0;
 	border-bottom: hsl(340, 100%, 50%) solid 5px;
 }
 
 .welcome p {
-	color: hsl(60, 100%, 85%);
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	padding: 0 70px 0 70px;
-	/* margin-top: 40px; */
 }
 
 .welcome h1 {
 	color: hsl(236, 1%, 86%);
 	text-align: center;
 	font-size: 5rem;
-	padding: 140px 70px 0 70px;
+	padding: 60px 70px 0 70px;
 	margin-bottom: 20px;
 }
 
 .welcome h2 {
 	color: hsl(157, 100%, 40%);
 	text-align: center;
-	margin: 0;
+	font-size: 2.3rem;
+	padding: 0 70px 0 70px;
+	margin-bottom: 30px;
+}
+
+.f-white {
+	color: #fff;
+}
+
+.f-pale {
+	color: hsl(60, 100%, 85%);
+}
+
+section h2 {
+	font-family: 'Exo 2', sans-serif;
+	color: hsl(157, 100%, 40%);
 	font-size: 2rem;
-	padding: 20px 70px 0 70px;
+	text-align: center;
+}
+
+.about-info {
+	width: 60%;
+	margin: auto;
+	color: #fff;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	line-height: 1.5;
 }
 
 .all-projects {
@@ -110,8 +157,9 @@ header {
 	flex-wrap: wrap;
 }
 
-.project-c {
+.project-c, .about {
 	padding-bottom: 40px;
+	border-bottom: hsl(340, 100%, 50%) solid 5px;
 }
 
 .ind-project {
@@ -131,8 +179,6 @@ header {
 }
 
 .project-c h2 {
-	color: hsl(157, 100%, 40%);
-	font-size: 2rem;
 	text-align: center;
 	padding: 20px 0 15px 0;
 	margin-bottom: 0;
@@ -140,10 +186,6 @@ header {
 
 .project-title {
 	margin: 20px 5px;
-}
-
-.project-c {
-	border-bottom: hsl(340, 100%, 50%) solid 5px;
 }
 
 .ind-project a {
@@ -179,12 +221,11 @@ footer {
 }
 
 footer h2 {
-	color: hsl(157, 100%, 40%);
-	font-weight: bold;
 	margin: 0;
 	padding-top: 40px;
 	padding-bottom: 30px;
 	padding: 20px 30px;
+	font-family: 'Muli', sans-serif;
 }
 
 footer a {
@@ -200,49 +241,130 @@ footer a {
 	margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-	header {
-		display: inline-block;
-		text-align: center;
-	}
-	.styled-primary {
-		display: inline-block;
-	}
-	.styled-primary li {
-		text-align: center;
-	}
-}
-
 /* ---------MEDIA QUERIES--------------- */
 
-@media only screen and (max-width: 568px) {
-	.styled-primary li {
-		font-size: 1rem;
-		width: 90px;
+@media only screen and (max-width: 767px) {
+	.navbar {
+		font-size: 18px;
+		padding-bottom: 10px;
+		position: fixed;
+		z-index: 100;
+		width: 100%;
 	}
-	.styled-primary>li>a {
-		width: 90px;
+	.main-nav {
+		list-style-type: none;
+		display: none;
+		padding: 0;
+	}
+	.nav-link, .logo {
+		text-decoration: none;
+	}
+	.logo {
+		display: inline-block;
+		font-size: 22px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.nav-link {
+		color: #fff;
+	}
+	.main-nav li {
+		text-align: center;
+		margin: 15px auto;
+	}
+	.main-nav li:first-child {
+		padding-top: 20px;
+		border-top: 1px solid rgb(200, 200, 200);
+	}
+	.nav-toggle {
+		position: absolute;
+		top: 8px;
+		right: 20px;
+		cursor: pointer;
+		color: #fff;
+		font-size: 24px;
+	}
+	.show {
+		display: block;
+	}
+	a.selected {
+		color: var(--c-mid-blue);
+	}
+	.welcome {
+		height: 100vh;
 	}
 	.welcome h1 {
 		font-size: 2.6rem;
-		padding: 150px 30px 0 30px;
+		padding: 80px 30px 0 30px;
 	}
 	.welcome h2 {
 		font-size: 1.3rem;
 		padding: 0 30px 0 30px;
+		margin-bottom: 15px;
 	}
 	.welcome p {
 		font-size: 1rem;
+		line-height: 1.5;
 		padding: 0 30px 0 30px;
 	}
-	.project-c h2 {
+	.about-info {
+		width: 85%;
+	}
+	.about-info p {
+		font-size: 1rem;
+	}
+	.project-c h2, .about h2 {
 		font-size: 1.3rem;
 		padding: 0 30px;
 	}
+	.contact-links {
+		display: flex;
+		flex-direction: column;
+	}
 	.contact h2 {
 		font-size: 1.2rem;
+		padding-bottom: 0;
+		margin-bottom: 10px;
 	}
 	footer a {
 		font-size: 1.2rem;
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1999px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+	}
+	.main-nav {
+		display: flex;
+		margin-right: 60px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.main-nav li {
+		margin: 0;
+	}
+	.main-nav li:first-child {
+		padding-top: 0;
+		border-top: none;
+	}
+	.nav-link {
+		margin-left: 40px;
+		color: #fff;
+	}
+	.logo {
+		margin-top: 0;
+		margin-left: 40px;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	.nav-link:hover, .nav-link:active {
+		color: var(--c-gold1);
 	}
 }
