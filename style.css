@@ -218,27 +218,41 @@ footer {
 
 .contact {
 	margin-top: 20px;
-}
-
-footer h2 {
-	margin: 0;
-	padding-top: 40px;
-	padding-bottom: 30px;
-	padding: 20px 30px;
-	font-family: 'Muli', sans-serif;
+	margin-bottom: 15px;
 }
 
 footer a {
 	text-decoration: none;
-	font-size: 1.5rem;
 	font-weight: bold;
 	padding: 0 20px;
 	color: #fff;
 }
 
+.contact h2 {
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	padding: 20px 30px;
+	font-family: 'Muli', sans-serif;
+	font-size: 25px;
+}
+
+.contact-email {
+	font-size: 20px;
+}
+
+.social {
+	margin-top: 40px;
+}
+
+.social i {
+	font-size: 30px;
+	margin: 0 15px;
+}
+
 .copyright {
 	color: hsl(60, 100%, 85%);
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 /* ---------MEDIA QUERIES--------------- */
@@ -322,11 +336,11 @@ footer a {
 		flex-direction: column;
 	}
 	.contact h2 {
-		font-size: 1.2rem;
+		/* font-size: 1.2rem; */
 		padding-bottom: 0;
 		margin-bottom: 10px;
 	}
-	footer a {
+	.contact-email {
 		font-size: 1.2rem;
 		margin-top: 15px;
 	}
